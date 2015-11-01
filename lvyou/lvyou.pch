@@ -1,0 +1,98 @@
+//
+//  lvyou.pch
+//  lvyou
+//
+//  Created by imac on 15/9/26.
+//  Copyright (c) 2015年 imac. All rights reserved.
+//
+
+#ifndef lvyou_lvyou_pch
+#define lvyou_lvyou_pch
+
+#define KScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight  [UIScreen mainScreen].bounds.size.height
+
+#define current_location @"location"
+
+#import <CoreLocation/CoreLocation.h>
+
+#define UMAppKey @"560c948667e58e8809003efb"
+#define user_message @"userMessage"
+#define user_token @"accessToken"
+#define user_name @"userName"
+#define user_id @"userId"
+#define user_icon @"userHeaderUrl"
+#define user_model @"userModel"
+
+#import "BaseModel.h"
+#import "UIViewExt.h"
+#import "DataService.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "WXLabel.h"
+#import "UIView+ViewController.h"
+#import "MJRefresh.h"
+#import "UMSocial.h"
+#import "SinaWeibo.h"
+#import "ZoomImageView.h"
+#import "TextCopy.h"
+#import "ProfileModel.h"
+//主URL
+#define Main_URL @"http://api.miaotu.com/v1.1/"
+
+//一起去
+#define yiqiqu_URL @"yueyou/list"
+#define yueyou_like @"yueyou/like"
+
+//详情页面
+//http://api.miaotu.com/v1.1/yueyou/?token=48fc4f67-6362-11e5-bfd0-00163e002e59&yid=12358
+#define detail_url @"yueyou/"
+//评论
+#define replay_url @"yueyou/reply"
+
+//驴游团
+#define lvyoutuan_url @"activity/list"
+
+//专题
+#define  theme_url @"http://m.miaotu.com/App32/theme/"
+
+//搜索
+//http://api.miaotu.com/v1.1/base/search/keywords
+#define search_url @"base/search/keywords"
+
+//http://api.miaotu.com/v1.1/yueyou/search?token=e8c35d4a-6a93-11e5-99ba-00163e002e59&keywords=%E4%B8%BD%E6%B1%9F&latitude=39.916998&longitude=116.182038&page=1&num=10
+
+//搜索结果
+#define searchResult_url @"yueyou/search"
+
+//找人
+//http://api.miaotu.com/v1.1/users/search?token=e8c35d4a-6a93-11e5-99ba-00163e002e59&keywords=%E6%8B%89%E8%90%A8&page=1&num=12
+#define searchFriends_url @"users/search"
+
+//评论
+//http://api.miaotu.com/v1.1/yueyou/reply  POST
+#define reply_url @"yueyou/reply"
+
+//分享
+#define share_url @"http://m.miaotu.com/ShareLine32/"
+
+#pragma mark  json
+#define homeJson @"HomeJson"
+#define homeForDis @"homeForDis"
+#define homeForHot @"homeForHot"
+#define detail @"Detail"
+#define lvyoutuan @"lvyoutuan"
+#define hot @"hot"
+#define nearby @"nearby"
+
+
+//个人主页
+#define user_url @"user"
+
+//http://api.miaotu.com/v1.1/base/user  获取登录的账号信息
+#define login_url @"base/user"
+
+
+
+
+#endif
